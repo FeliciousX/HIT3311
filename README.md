@@ -32,10 +32,7 @@ Software Evolution fits into `general laws` . Which are Lehman's Law:-
 8. Feedback Driven
 
 The Carzaniga Model 1998
-
-[ ] Add the image link
-
-[Software Deployment Process by Carzaniga](https://github.com/FeliciousX/HIT3311)
+![Software Deployment Process by Carzaniga](https://github.com/FeliciousX/HIT3311/blob/master/carzaniga_software_deployment_model.png?raw=true)
 
 Lecture 2 - Deployment Fundamentals
 =========
