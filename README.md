@@ -36,6 +36,49 @@ The Carzaniga Model 1998
 
 Lecture 2 - Deployment Fundamentals
 =========
+Focusing on the `Release` part of the Carzaniga Model
+Steps in Release Activity:-
+- Packaging
+- Advertising
+
+Types of Environments
+- Development
+- Testing
+- Staging
+- Live/Production
+
+#### Package ####
+A collection of files with instructions on what to do with them.
+- Executables with required libs
+- Meta-data
+- Data files and Configuration Info
+
+Example of Packaging methods are `ZIP`, `MSI`, `RPM`, `JAR`, `DEB`, `DMG`, etc.
+
+#### Advertise ####
+- Licensing
+- Support
+- Roadmap
+
+##### Licensing #####
+3 types of License:-
+1. Highly Restrictive / Viral / Reciprocal (e.g. GPL)
+2. Restrictive (e.g. LGPL, Mozilla)
+3. Un-restrictive (e.g. BDS, Apache)
+
+##### Support #####
+Types of supports that can be given:-
+- FAQ
+- Email, IM or Telephone
+- Issue Reporting
+- Quick start Guide / User Manual
+- Knowledge Base (Wiki)
+- Discussion boards
+
+##### Product Roadmap #####
+Future plan of the product.
+Improves customer confidence
+
 
 Lecture 3 - Deployment - Install and Update
 =========
