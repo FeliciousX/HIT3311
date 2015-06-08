@@ -296,6 +296,47 @@ To plan deployment, we need information about:-
 
 Lecture 6 - Measuring Software
 =========
+## Measures vs Metrics ##
+- *Metric* is a function measuring the distance between two objects
+- *Measure* is a function mapping an attribute of a real world entity (domain) onto a symbol in a set with known mathematical relations (range)
+- *Measurement* is the symbol assigned to the real world attribute by the measure. (cm, kg)
+
+*Software Metrics* is any type of `measurement` which relates to a software system, process or related documentation
+
+For example:-
+- Lines of Code in a program
+- Cyclomatic Complexity of a particular method
+- the Fog Index (calculates readability of a piece of documentation)
+- 0.4 x (( \# words / \# sentences) + (% words >= 3 syllables) )
+
+In other words, `Software Measures` is a better word. `Software Metric` is widely used because people are often ignorant.
+
+Metrics provide feedback when one is focused on a goal.
+
+5 types Measurement Scales:-
+1. Nominal
+    - Puts item into categories (Human, Animal, Insects)
+2. Ordinal
+    - Ranks items in an order (Minor, Marginal, Major, Catastrophic)
+3. Interval
+    - We know the numeric scales and also the exact differences between the values (Time, Temperature in Celsius)
+    - Does not describe absolute zero
+    - You can + or - but cant x and /
+4. Ratio
+    - You can do multiplication and division!
+    - Has absolute zero
+    - e.g. Length of a table
+5. Absolute
+    - counting the number of elements in the entitiy set
+    
+Each scale captures more info than it's predecessor.
+
+For a measure to be useful we need to know:-
+- What is being measured?
+- Scale of the measure (ratio? interval?)
+- Range of the measure (possible values)
+
+---
 
 Lecture 7 - Growth in Software
 =========
