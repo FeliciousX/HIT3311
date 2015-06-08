@@ -220,8 +220,22 @@ is required when
 - Updating components
 - Adapting to changing external configuration
 
-Lecture 4 - Deployment - Execution
+---
+
+Lecture 4 - Deployment - Execution Approaches
 =========
+## Build Management ##
+- Builds are numbers 1, 2, 3 ... 1523, 1524
+- Environment is pre/post fixed to build numbers
+    - e.g. T5162 (Test build 5162), S369 (Staging build 369), L337 (Live build 337)
+
+## Deployment Approaches ##
+- Manual
+- Scripted
+- Language Based
+- Model Based
+
+---
 
 Lecture 5 - Deployment - Planning and Suppot
 =========
@@ -240,3 +254,10 @@ Lecture 9 - Change
 
 Lecture 10 - Change and Review
 ==========
+
+---
+
+Glossary
+========
+- ACID (atomicity, consistency, isolation, durability) is a set of properties that guarantee that database transaction are processed reliably.
+- J2EE Java Platform, Enterprise Edition
