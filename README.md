@@ -175,7 +175,7 @@ Things that can change:-
 - External components (OS update)
 
 Adaptation is generally triggered during the `Activation` step. Which makes sense.
-Adaptation may trigger for an update to adapt.. or a fresh install.. 
+Adaptation may trigger for an update to adapt.. or a fresh install..
 
 ---
 
@@ -265,7 +265,7 @@ To plan deployment, we need information about:-
         - Availability of security permissions, tools and people to perform deployment
             - An issue when environment is controlled by an external hosting provider
     - Communication
-        -Planning will need to take into consideration:-
+        - Planning will need to take into consideration:-
             - Who needs to be notified?
             - Who can send out notifications? (Authorization for communication)
             - What will be communicated?
@@ -328,7 +328,7 @@ Metrics provide feedback when one is focused on a goal.
     - e.g. Length of a table
 5. Absolute
     - counting the number of elements in the entitiy set
-    
+
 Each scale captures more info than it's predecessor.
 
 For a measure to be useful we need to know:-
@@ -340,6 +340,18 @@ For a measure to be useful we need to know:-
 
 Lecture 7 - Growth in Software
 =========
+Lehman's Law of Software Evolution
+1. Continuing Change
+    -
+2. Increasing Complexity
+3. Self-Regulation
+4. Invariant work rate
+5. Conservation of Familiarity
+6. Continuing Growth
+7. Declining Quality
+8. Feedback driven
+
+---
 
 Lecture 8 - Growth and Change
 =========
