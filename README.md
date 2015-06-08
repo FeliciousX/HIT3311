@@ -34,6 +34,8 @@ Software Evolution fits into `general laws` . Which are Lehman's Law:-
 The Carzaniga Model 1998
 ![Software Deployment Process by Carzaniga](https://github.com/FeliciousX/HIT3311/blob/master/carzaniga_software_deployment_model.png?raw=true)
 
+---
+
 Lecture 2 - Deployment Fundamentals
 =========
 Focusing on the `Release` part of the Carzaniga Model
@@ -80,8 +82,143 @@ Future plan of the product.
 Improves customer confidence
 
 
-Lecture 3 - Deployment - Install and Update
+Lecture 3 - Deployment - Install, Update and Retire
 =========
+
+## Install ##
+Focusing on the `Install` part of the Carzaniga Model
+Steps in Install Activity:-
+- Transfer
+- Configure
+
+#### Transfer ####
+Things to take into consideration while doing transfer (copying files):-
+
+- location and file permission
+- working with previous versions (SHOULDN'T THIS BE ON UPDATE? WTF)
+    - override file? or multi-version?
+- Checking component dependencies
+- Co-ordination with multiple machines or multiple different softwares
+- Content Delivery Issues
+- Security
+    - authorization & authentication required?
+    - integrity checking? (MD5/SHA)
+- Access to network
+    - Needs to download missing libraries online
+
+#### Configure ####
+Once transferring is done and verified. We configure.
+
+Things to take into consideration during configurations:-
+
+- Registering components / libraries with OS (like Windows registry)
+- Setting up data for the use in the environment (Dev, Test, Staging, Live)
+- Setting up networking in a multi-system environment
+- Security
+    - Check file permissions to ensure product can be started up
+- Configuration info must be in the `Package`
+
+---
+
+## Activate ##
+Activate is the process of *starting-up* a software system
+
+2 types:
+- First time initial activation
+- Normal activation
+
+For a first time activation, it requires a configuration step. Additional things may be needed to be setup before product can be used.
+Normally things like setting up cache files and initializing databases. Basically things that could not be done with an installer.
+
+Activation should check
+- system run-time integrity
+- Authorization level
+- License verification
+
+Activation can also acquire locks on certain devices.
+
+---
+
+## De-Activate ##
+De-Activate is the process of *shutting down* a software system
+
+It should return all locks (on devices) and resources properly.
+Partial de-activation support may be needed for many systems.
+
+---
+
+## De-Install ##
+De-Install is the process of removing the software.
+
+An ideal removal process should:-
+- remove all software components / libraries that are unused by other system
+- Un-register any libraries (Registry in Windows)
+- Create an archive of data files
+
+`ACID = (atomicity, consistency, isolation, durability) is a set of properties that guarantee that database transaction are processed reliably.`
+
+---
+
+## Update ##
+Update Activity consists of `Transfer` and `Configure` . Just like `Install` .
+
+While transferring, same issues needed to be considered as in `Install -> Transfer`
+For `Update -> Configure` , data migration may need to be part of the configuration step.
+
+---
+
+## Adapt ##
+The ability of the software to adapt to an external change
+
+Things that can change:-
+- External hardware and associated drivers (Video card, sound driver)
+- External components (OS update)
+
+Adaptation is generally triggered during the `Activation` step. Which makes sense.
+Adaptation may trigger for an update to adapt.. or a fresh install.. 
+
+---
+
+## De-Release ##
+De-Release consists of `Advertise` and `Retire`
+
+This is the process of slowly removing support services and formally retiring a product
+
+Normally triggered when a new release is created (depending on the type of SDLC) a previous release may be retired (For example Windows XP? )
+
+These involves `advertising` . More like the inverse of `Release -> Advertise`.
+Removing support. Removing development resources. Forcing licenses to expire.
+
+Wait what? Forcing licenses to expire?
+
+##### Timed Licensing #####
+Some software systems are released under a timed license. You lease the software for a period of time and after that, it will cease to function.
+A more effective De-Release model !
+Commonly applied in large enterprise systems.
+
+---
+
+### Transactional Integrity ###
+The following must maintain transactional integrity and might need authorization:-
+- Install
+- Update
+- Adapt
+- Active
+- De-activate
+- De-install
+
+lol. Basically everything mentioned above.
+
+Ideally... should be able to compensate for *power-failures* and *component failures*
+or.. allow user to return to previous state
+
+---
+
+### Data Migration ###
+is required when
+- Installing over a previous version
+- Updating components
+- Adapting to changing external configuration
 
 Lecture 4 - Deployment - Execution
 =========
