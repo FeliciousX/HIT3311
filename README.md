@@ -340,21 +340,68 @@ For a measure to be useful we need to know:-
 
 Lecture 7 - Growth in Software
 =========
-Lehman's Law of Software Evolution
+### Lehman's Law of Software Evolution ###
 1. Continuing Change
-    -
+    - After deployment, software continues to change in order to fix all the issues and meet core requirements
 2. Increasing Complexity
+    - Software evolution would cause its complexity to grow over time
 3. Self-Regulation
 4. Invariant work rate
+    - Constant work rate over time
 5. Conservation of Familiarity
 6. Continuing Growth
+    - More functions are added over time to adapt to new environment. Hence, growth.
 7. Declining Quality
+    - Software are seen as having a declining quality over time. To adapt and survive, it has to evolve.
 8. Feedback driven
+
+Why study growth?
+- We can tell from the rate of growth if development is speeding up or slowing down.. or if it the rate is constant.
+- We can understand the team is consistent with their release cycle or long breaks in between.
+
+### Modelling Growth ###
+Two dimensions in a study of growth:-
+- Time
+    - Release Sequence Number
+        - Shows general trend
+    - Calendar Time
+        - Reveals the rhythm of a team
+- Volumne / Complexity measure
+
+### Types of Growth ###
+1. Linear Growth
+    - Complexity of system not causing a drag on the growth rate
+    - Loosely coupled and modular architecture
+    - If growth rate can be attribute to increase in team size, poor architecture.
+    - Tools are being used to support productivity
+2. Sub-Linear Growth
+    - matches the expectation of Lehman's Law
+    - Complexity is causing a drag on growth rate (with constant effort)
+3. Super-Linear Growth
+    - Plug-in based architectures
 
 ---
 
 Lecture 8 - Growth and Change
 =========
+Types of Software Maintenance (Swanson, 1976):
+1. Corrective
+    - fixing bugs / issues / defects
+    - correct processing, performance or implementation failures.
+2. Perfective
+    - adding features to meet expectation
+    - perfecting system in terms of its performance, processing efficiency or maintainability
+3. Adaptive
+    - adjusting to meet external changes
+4. Prevantative
+    - maintenance of equipment or systems before fault occurs
+
+So that was Swanson. Then comes Chapin in 2001 arguing that Software = Code + Documentation (I kinda agree?)
+
+He came up with 12 types of Software Maintenance.
+![Chapin Types of Software Maintenance](https://github.com/FeliciousX/HIT3311/blob/master/Chapin-Types_of_Software_Maintenance.png?raw=true)
+
+---
 
 Lecture 9 - Change
 =========
