@@ -239,6 +239,60 @@ Lecture 4 - Deployment - Execution Approaches
 
 Lecture 5 - Deployment - Planning and Suppot
 =========
+### Framework for Planning ###
+To plan deployment, we need information about:-
+- Deployment Model (the scope)
+- Constraints
+    - Temporal (Time related)
+        - How long will a deployment take?
+        - How often do we need to deploy?
+        - What is the acceptable downtime?
+        - What was promised?
+        - What was required?
+    - Environment and Infrastructure
+        - OS
+        - Programming languages and culture
+        - Bandwidth available vs needed
+        - Security, Safety, Reliability and Legal aspects
+        - Is it a fully managed or outsourced infrastructure?
+        - Who owns the infrastructure?
+        - Who manages the infrastructure?
+        - Who is responsible for license management?
+    - Automation
+        - Level of automation
+            - Manual , Scripted , Language , Model driven
+        - Tooling and Experience of team performing the deployment
+        - Availability of security permissions, tools and people to perform deployment
+            - An issue when environment is controlled by an external hosting provider
+    - Communication
+        -Planning will need to take into consideration:-
+            - Who needs to be notified?
+            - Who can send out notifications? (Authorization for communication)
+            - What will be communicated?
+            - Support during/after the deployment process
+            - How much notice is needed for downtime?
+
+- Change pattern / properties
+- Impact of deployment
+
+### Data Migration ###
+- Change
+    - Data has an underlying schema
+    - triggered by change (environment, upgrade, update, operations, error correction)
+    - Types of change
+        - Addition (e.g. Add new table)
+        - Removal (e.g. Drop table)
+        - Modification (e.g. Alter table , modify data)
+- Approaches
+    - Change will alter the database `schema`
+    - Modify schema
+    - Versioning the schema and data
+- Strategy
+    - when migrating information, must preserve the domain meaning (semantics)
+    - ensures business rules and any transformations are persisted properly
+    - software should provide an API for developers to pull meaningful data from database to ensure new version can import data from old version
+
+---
 
 Lecture 6 - Measuring Software
 =========
