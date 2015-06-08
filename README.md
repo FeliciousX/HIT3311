@@ -401,6 +401,62 @@ So that was Swanson. Then comes Chapin in 2001 arguing that Software = Code + Do
 He came up with 12 types of Software Maintenance.
 ![Chapin Types of Software Maintenance](https://github.com/FeliciousX/HIT3311/blob/master/Chapin-Types_of_Software_Maintenance.png?raw=true)
 
+and group them in 4 different *clusters*
+1. Support Interface
+    - Training
+        - conducting classes for customer personnel
+    - Consultive
+        - confer with customer personnel / managers about the effective use of a system or the making of changes to the software
+        - and advising customers / managers / stakeholders about the likely time, cost, activities, effort needed to do requested evolution / maintenance work
+    - Evaluative
+        - auditing
+        - searching
+        - examining
+        - testing
+        - calculating metrics
+        - creating an understanding
+2. Documentation
+    - Reformative
+        - restyles or changing the *format* of the documentation / user manual to make it better.
+    - Updative
+        - updating the content and coverage like replacing obsolete documentation and filling in gaps etc.
+3. Software Properties
+    - Groomative
+        - making algorithms more elegant (easier to read but same performance)
+        - Alter code readability / understandability
+        - provide less-crytic error messages
+    - Preventive
+        - making changes that do not alter customer experience
+    - Performance
+        - reducing the amount of internal storage used
+        - reducing the duration of out-of-service periods
+        - speeding executing by replacing components
+        - algorithms with faster ones
+    - Adaptive
+        - make system work cross-platform
+        - able to use different types of database
+        - changing communication protocols supported
+        - changing design and implementation e.g. moving to OOP
+4. Business rules
+    - Reductive
+        - eliminating or reducing data flow
+        - limiting / eliminating some business rules from the implemented repertoire
+        - replacing / constraining / removing part or all of some components or algorithms or subsystems
+    - Corrective
+        - refining implmentations of the existing business rules
+    - Enhancive
+        - Adding new stuff or functionality
+
+### Maintenance Terminology ###
+- Refactoring
+- Re-engineering
+
+A class is most likely to be:
+1. Unchanged
+2. Modified
+3. Newly created
+4. Deleted ( chance <1%)
+
 ---
 
 Lecture 9 - Change
