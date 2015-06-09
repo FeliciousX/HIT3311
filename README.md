@@ -2,12 +2,14 @@ Lecture 1 - Introduction
 =========
 
 #### Operation team ####
+
 - Deploy
 - Upgrade
 - Support
 - Raise and Track Issues
 
 #### Development team
+
 - Analyze
 - Design
 - Construct
@@ -40,10 +42,12 @@ Lecture 2 - Deployment Fundamentals
 =========
 Focusing on the `Release` part of the Carzaniga Model
 Steps in Release Activity:-
+
 - Packaging
 - Advertising
 
 Types of Environments
+
 - Development
 - Testing
 - Staging
@@ -51,6 +55,7 @@ Types of Environments
 
 #### Package ####
 A collection of files with instructions on what to do with them.
+
 - Executables with required libs
 - Meta-data
 - Data files and Configuration Info
@@ -58,18 +63,21 @@ A collection of files with instructions on what to do with them.
 Example of Packaging methods are `ZIP`, `MSI`, `RPM`, `JAR`, `DEB`, `DMG`, etc.
 
 #### Advertise ####
+
 - Licensing
 - Support
 - Roadmap
 
 ##### Licensing #####
 3 types of License:-
+
 1. Highly Restrictive / Viral / Reciprocal (e.g. GPL)
 2. Restrictive (e.g. LGPL, Mozilla)
 3. Un-restrictive (e.g. BDS, Apache)
 
 ##### Support #####
 Types of supports that can be given:-
+
 - FAQ
 - Email, IM or Telephone
 - Issue Reporting
@@ -88,6 +96,7 @@ Lecture 3 - Deployment - Install, Update and Retire
 ## Install ##
 Focusing on the `Install` part of the Carzaniga Model
 Steps in Install Activity:-
+
 - Transfer
 - Configure
 
@@ -124,13 +133,15 @@ Things to take into consideration during configurations:-
 Activate is the process of *starting-up* a software system
 
 2 types:
+
 - First time initial activation
 - Normal activation
 
 For a first time activation, it requires a configuration step. Additional things may be needed to be setup before product can be used.
 Normally things like setting up cache files and initializing databases. Basically things that could not be done with an installer.
 
-Activation should check
+Activation should check...
+
 - system run-time integrity
 - Authorization level
 - License verification
@@ -151,6 +162,7 @@ Partial de-activation support may be needed for many systems.
 De-Install is the process of removing the software.
 
 An ideal removal process should:-
+
 - remove all software components / libraries that are unused by other system
 - Un-register any libraries (Registry in Windows)
 - Create an archive of data files
@@ -171,6 +183,7 @@ For `Update -> Configure` , data migration may need to be part of the configurat
 The ability of the software to adapt to an external change
 
 Things that can change:-
+
 - External hardware and associated drivers (Video card, sound driver)
 - External components (OS update)
 
@@ -200,6 +213,7 @@ Commonly applied in large enterprise systems.
 
 ### Transactional Integrity ###
 The following must maintain transactional integrity and might need authorization:-
+
 - Install
 - Update
 - Adapt
@@ -216,6 +230,7 @@ or.. allow user to return to previous state
 
 ### Data Migration ###
 is required when
+
 - Installing over a previous version
 - Updating components
 - Adapting to changing external configuration
@@ -225,11 +240,13 @@ is required when
 Lecture 4 - Deployment - Execution Approaches
 =========
 ## Build Management ##
+
 - Builds are numbers 1, 2, 3 ... 1523, 1524
 - Environment is pre/post fixed to build numbers
     - e.g. T5162 (Test build 5162), S369 (Staging build 369), L337 (Live build 337)
 
 ## Deployment Approaches ##
+
 - Manual
 - Scripted
 - Language Based
@@ -241,6 +258,7 @@ Lecture 5 - Deployment - Planning and Suppot
 =========
 ### Framework for Planning ###
 To plan deployment, we need information about:-
+
 - Deployment Model (the scope)
 - Constraints
     - Temporal (Time related)
@@ -276,6 +294,7 @@ To plan deployment, we need information about:-
 - Impact of deployment
 
 ### Data Migration ###
+
 - Change
     - Data has an underlying schema
     - triggered by change (environment, upgrade, update, operations, error correction)
@@ -297,6 +316,7 @@ To plan deployment, we need information about:-
 Lecture 6 - Measuring Software
 =========
 ## Measures vs Metrics ##
+
 - *Metric* is a function measuring the distance between two objects
 - *Measure* is a function mapping an attribute of a real world entity (domain) onto a symbol in a set with known mathematical relations (range)
 - *Measurement* is the symbol assigned to the real world attribute by the measure. (cm, kg)
@@ -304,6 +324,7 @@ Lecture 6 - Measuring Software
 *Software Metrics* is any type of `measurement` which relates to a software system, process or related documentation
 
 For example:-
+
 - Lines of Code in a program
 - Cyclomatic Complexity of a particular method
 - the Fog Index (calculates readability of a piece of documentation)
@@ -314,6 +335,7 @@ In other words, `Software Measures` is a better word. `Software Metric` is widel
 Metrics provide feedback when one is focused on a goal.
 
 5 types Measurement Scales:-
+
 1. Nominal
     - Puts item into categories (Human, Animal, Insects)
 2. Ordinal
@@ -332,6 +354,7 @@ Metrics provide feedback when one is focused on a goal.
 Each scale captures more info than it's predecessor.
 
 For a measure to be useful we need to know:-
+
 - What is being measured?
 - Scale of the measure (ratio? interval?)
 - Range of the measure (possible values)
@@ -341,6 +364,7 @@ For a measure to be useful we need to know:-
 Lecture 7 - Growth in Software
 =========
 ### Lehman's Law of Software Evolution ###
+
 1. Continuing Change
     - After deployment, software continues to change in order to fix all the issues and meet core requirements
 2. Increasing Complexity
@@ -356,11 +380,13 @@ Lecture 7 - Growth in Software
 8. Feedback driven
 
 Why study growth?
+
 - We can tell from the rate of growth if development is speeding up or slowing down.. or if it the rate is constant.
 - We can understand the team is consistent with their release cycle or long breaks in between.
 
 ### Modelling Growth ###
 Two dimensions in a study of growth:-
+
 - Time
     - Release Sequence Number
         - Shows general trend
@@ -369,6 +395,7 @@ Two dimensions in a study of growth:-
 - Volumne / Complexity measure
 
 ### Types of Growth ###
+
 1. Linear Growth
     - Complexity of system not causing a drag on the growth rate
     - Loosely coupled and modular architecture
@@ -384,7 +411,8 @@ Two dimensions in a study of growth:-
 
 Lecture 8 - Growth and Change
 =========
-Types of Software Maintenance (Swanson, 1976):
+Types of Software Maintenance (Swanson, 1976):-
+
 1. Corrective
     - fixing bugs / issues / defects
     - correct processing, performance or implementation failures.
@@ -402,6 +430,7 @@ He came up with 12 types of Software Maintenance.
 ![Chapin Types of Software Maintenance](https://github.com/FeliciousX/HIT3311/blob/master/Chapin-Types_of_Software_Maintenance.png?raw=true)
 
 and group them in 4 different *clusters*
+
 1. Support Interface
     - Training
         - conducting classes for customer personnel
@@ -450,10 +479,12 @@ and group them in 4 different *clusters*
 ---
 
 ### Maintenance Terminology ###
+
 - Refactoring
 - Re-engineering
 
 A class is most likely to be:
+
 1. Unchanged
 2. Modified
 3. Newly created
@@ -484,6 +515,7 @@ Dispersion increases abstraction. More thing to remember for developers when dev
 Concentration increases complexity but developers can usually deal with a few complex classes in comparison to many abstract classes.
 
 ### Machine Generated Code ###
+
 - code generated by machines often has a very high complexity
 - gini goes well over 0.85
 
@@ -496,5 +528,6 @@ Lecture 10 - Change and Review
 
 Glossary
 ========
+
 - ACID (atomicity, consistency, isolation, durability) is a set of properties that guarantee that database transaction are processed reliably.
 - J2EE Java Platform, Enterprise Edition
